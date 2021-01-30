@@ -4,16 +4,22 @@
 <!--content-->
 <div class="content-container container">
     <div class="row graph2-main">
-        <h2 class="page-title">Top 10 Songs</h2>
+        <h2 class="page-title">Attributes of the Top 10 Songs</h2>
         <div class="col-lg-3">
             <div class="graph2-text">
                 <div class="graph1-content">
+                <h4>What is this showing?</h4>
+                <h5 id="changer">Energy</h5>
+                <p id="graph2-p">This bar chart reviews the valence, energey, and danceability  of the top 10 most popular songs from this data set.
+                    <br><br>
+                    Amongst these songs, the mood and energy appear to be varying. However, the danceability appears to be moderate to high.
+
+                </p>
+                </div>
                     <div>
                     <button onclick="updateBarChart('energy')" class="graph2-button">Energy</button>
                     <button onclick="updateBarChart('valence')" class="graph2-button">Valence</button>
                     <button onclick="updateBarChart('danceability')" class="graph2-button">Danceability</button>
-                </div>
-                <p id="graph2-p">This bar chart displays amounts for the energy, valence, and danceability for the top 10 songs in the dataset</p>
                 </div>
             </div>
         </div>

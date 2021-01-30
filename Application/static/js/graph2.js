@@ -15,7 +15,17 @@ var yAxis = svg.append("g").attr("class", "myYaxis")
 
 //Update Bar Chart
 function updateBarChart(selectedVar) {
-
+    var elem = document.getElementById("changer");
+    console.log(elem.value);
+    if (selectedVar === "energy") {
+        elem.innerHTML  = "(Energy)";
+    } else if (selectedVar === "valence") {
+        elem.innerHTML  = "(Valence)";
+    } else if (selectedVar === "danceability"){
+        elem.innerHTML  = "(Danceability)";
+    } else {
+        elem.innerHTML  = "(Energy)";
+    }
 // Parse the Data
     d3.json("/static/json/jsonData.json", function(data) {
     var allValues = [];
@@ -62,4 +72,4 @@ function updateBarChart(selectedVar) {
 }
 
 // Initialize plot
-updateBarChart("energy")
+updateBarChart("energy");
