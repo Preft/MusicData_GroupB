@@ -5,6 +5,7 @@ from bson.json_util import dumps
 from config import password
 from json import dumps
 import random
+
 app = Flask(__name__,
             static_folder='static',
             template_folder='templates')
@@ -12,7 +13,7 @@ app.config['MONGO_URI'] = f"mongodb+srv://besergent:{password}@spotify.hw708.mon
 mongo = PyMongo(app)
 
 def get_api_data():
-    apidata = mongo.db.track_information.rand().limit(100)
+    apidata = mongo.db.randomized_data.find().limit(300)
     ApiTempList = []
     for item in apidata:
         item['_id'] = str(item['_id'])
@@ -20,7 +21,7 @@ def get_api_data():
     return json.dumps(ApiTempList)
 
 def get_js_data():
-    jsdata = mongo.db.track_information.rand().limit(100)
+    jsdata = mongo.db.randomized_data.find().limit(300)
     JsTempList = []
     with open('static/json/jsonData.json', 'w') as outputfile:
         outputfile.truncate(0)
