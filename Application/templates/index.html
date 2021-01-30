@@ -20,47 +20,52 @@
             <div class="col-lg-12 col-md-12">
                 <div class="dash-main container">
                     <div>
-                        <h2 class="page-title">Dashboard</h2>
+                        <h1 class="page-title">Dashboard</h1>
                         <div class="dash-content row">
                             <div class="dash-synopsis col-md-12">
-                                <p class="dash-synopsis-text">Project Two: Spotify Dashboard</p>
+                                <p class="dash-synopsis-text">Click on any of the below interactive graphs or tables!</p>
                             </div>
                             <div class="dash-graph1 col-md-6 dash-box">
                                 <a class="dash-graph" href="/graph1">
                                     <div>
-                                        <img src="../images/scatterNew.png" alt="graph1">
-                                        <p class="dash-graph-text">Interactive Scatter Plot</p>
+                                        <h5>Tempo vs Other Attributes</h5>
+                                        <img src="/static/images/scatterNew.png" alt="graph1">
+                                        <p class="dash-graph-text" id="p1">Interactive Scatter Plot</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="dash-graph2 col-md-6 dash-box">
                                 <a class="dash-graph" href="/graph2">
                                     <div>
-                                        <img src="../images/TopSongsNew.png" alt="graph2">
-                                        <p class="dash-graph-text">Top Songs Interactive Graph</p>
+                                        <h5>Top Songs and their Attributes</h5>
+                                        <img src="/static/images/TopSongsNew.png" alt="graph2">
+                                        <p class="dash-graph-text" id="p2">Top Songs Interactive Graph</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="dash-graph3 col-md-6 dash-box">
                                 <a class="dash-graph" href="/graph3">
                                     <div>
-                                        <img src="../images/ItemsByYearNew.png" alt="graph3">
-                                        <p class="dash-graph-text">Decades Interactive Graph</p>
+                                        <h5>Average Attribute Accross Decades</h5>
+                                        <img src="/static/images/ItemsByYearNew.png" alt="graph3">
+                                        <p class="dash-graph-text" id="p3">Decades Interactive Graph</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="dash-data col-md-6 dash-box">
                                 <a class="dash-graph" href="/data">
                                     <div>
-                                        <img src="../images/dataimage.png" alt="data">
-                                        <p class="dash-graph-text">Data Filtering</p>
+                                        <h5>Search Data</h5>
+                                        <img src="/static/images/dataimage.png" alt="data">
+                                        <p class="dash-graph-text" id="p4">Data Filtering</p>
                                     </div>
                                 </a>
                             </div>
                             <div class="dash-about dash-box">
                                 <a class="dash-graph" href="/about">
                                     <div>
-                                        <p class="dash-graph-text">Intro feed to about</p>
+                                        <h2>About</h2>
+                                        <p class="dash-graph-text" id="p5">At Music Co., we know the importance that music holds for every listener. And you (the data-driven user) always want to know more, so we’re here to help. Using our website, you will be able to sort through over 160,000 tracks from Spotify to find attributes such as the release year, popularity, and even how loud it is. Our dashboard will allow you to sort through tracks based on fields like artist or genre.</p>
                                     </div>
                                 </a>
                             </div>
@@ -77,15 +82,15 @@
                 <div class="left-footer col-md-4">
                     <h6 class="footer-col-headers">Contributors</h6><hr>
                     <div class="left-footer-items">
-                        <a class="footer-links" href="https://github.com/Preft">Brent Sargent</a><br>
-                        <a class="footer-links" href="https://github.com/AllCAPs788">Clark Pfifer</a><br>
-                        <a class="footer-links" href="https://github.com/kcomalley14">Kyle O'Malley</a>
+                        <a class="footer-links" href="https://github.com/Preft" target="_blank">Brent Sargent</a><br>
+                        <a class="footer-links" href="https://github.com/AllCAPs788" target="_blank">Clark Pfifer</a><br>
+                        <a class="footer-links" href="https://github.com/kcomalley14" target="_blank">Kyle O'Malley</a>
                     </div>
                 </div>
                 <div class="mid-footer col-md-4">
-                    <h6 class="footer-col-headers">Kaggle</h6><hr>
+                    <h6 class="footer-col-headers">Resources</h6><hr>
                     <div class="mid-footer-items">
-                        <a class="footer-links" href="https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks" target="_blank">Resource1</a><br>
+                        <a class="footer-links" href="https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks" target="_blank">Kaggle</a><br>
                         <!-- <a class="footer-links" href="">Resource2</a> -->
                     </div>
                 </div>
@@ -99,7 +104,8 @@
         </div>
     </div>
     <!--Scripts /grabdata-->
-    
+    <script src="/static/js/shave.js"></script>
+    <script type="text/javascript" src="/static/js/indexShave.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

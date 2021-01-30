@@ -1,0 +1,10 @@
+const para1 = document.querySelector('p#p1');
+const para2 = document.querySelector('p#p2');
+const para3 = document.querySelector('p#p3');
+const para4 = document.querySelector('p#p4');
+const para5 = document.querySelector('p#p5');
+shave(para1, 40);
+shave(para2, 40);
+shave(para3, 40);
+shave(para4, 40);
+shave(para5, 40);

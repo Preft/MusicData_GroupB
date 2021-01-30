@@ -28,6 +28,14 @@ var tempo = []
     
     // A function that create / update the plot for a given variable:
     function update(selectedVar) {
+      var elem = document.getElementById("changer");
+      if (selectedVar === "speechiness") {
+        elem.innerHTML  = "(Speechiness)";
+      } else if (selectedVar === "tempo") {
+        elem.innerHTML  = "(Tempo)";
+      } else {
+        elem.innerHTML  = "(Speechiness)";
+      }
         d3.json('/static/json/jsonData.json', function(data) {
 
             var Dec1920s = [1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929];
@@ -232,7 +240,6 @@ var tempo = []
             final_data.push({group: '2000s', value: av_2000s});
             final_data.push({group: '2010s', value: av_2010s});
             final_data.push({group: '2020s', value: av_2020s});
-            console.log(final_data);
             finalFunction(final_data);
           });
     finalFunction=(someData)=> {
