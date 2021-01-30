@@ -8,7 +8,7 @@ from functions import get_api_data, get_js_data
 app = Flask(__name__,
             static_folder='static',
             template_folder='templates')
-app.config['MONGO_URI'] = f"mongodb+srv://besergent:{password}@spotify.hw708.mongodb.net/Spotify?retryWrites=true&w=majority"
+app.config['MONGO_URI'] = f"mongodb+srv://kcomalley14:{password}@spotify.hw708.mongodb.net/Spotify?retryWrites=true&w=majority"
 mongo = PyMongo(app)
 
 @app.route('/')
