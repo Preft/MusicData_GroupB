@@ -1,0 +1,7 @@
+g {
+    text-align: left !important;
+}
+
+g .tick text {
+    transform: rotate(25deg) !important;
+}

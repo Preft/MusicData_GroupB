@@ -1,0 +1,385 @@
+/* All */
+body {
+    background-color: black;
+}
+p{
+    color: green;
+}
+a:hover{
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////// NavBar /////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+.navbar-nav a:hover{
+    background-color: green;
+    color: white !important;
+    border-radius: 20px;
+}
+
+.mr-auto{
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+.navbar {
+    background-color: white !important;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    color: white !important;
+    background-color: black;
+    padding: 11px;
+    border-radius: 20px;
+}
+.nav-container {
+    padding-left: 10%;
+}
+.header-right {
+    float: right;
+    width: 50%;
+}
+.header-left {
+    float: left;
+    width: 50%;
+}
+.btn-right{
+    float: right;
+    width: 50px;
+    align-items: center;
+}
+.nav-item {
+    border-radius: 20px;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////// Dashboard ////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+
+.dash-main {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dash-box:hover {
+    border: solid 2px green;
+}
+
+.dash-box{
+    text-align: center;
+    border: solid 2px white;
+}
+
+.page-title{
+    color: green;
+    text-align: center;
+}
+
+.dash-synopsis {
+    text-align: center;
+}
+
+.dash-graph {
+    color: black; 
+    text-decoration: none;
+}
+
+.dash-graph:hover {
+    color: black; 
+    text-decoration: none;
+}
+
+.dash-graph-text {
+    color: black; 
+    text-decoration: none;
+}
+
+.dash-graph-text:hover {
+    color: black; 
+    text-decoration: none;
+}
+
+.dash-synopsis-text {
+    color: black;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////// Footer /////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+
+.footer-content {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.footer-col-headers {
+    color: green;
+    text-align: center;
+}
+
+.left-footer-items {
+    text-align: center;
+}
+
+.mid-footer-items{
+    text-align: center;
+}
+
+.right-footer-items{
+    text-align: center;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////// About /////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+.about-main {
+    background-color: white;
+    color: green;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.about-main h2 {
+    text-align: center;
+}
+
+.about-main p {
+    text-align: center;
+}
+
+.about-text {
+    color: black;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////// Data //////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+.data-main {
+    background-color: white;
+    color: green;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.data-main h2 {
+    text-align: center;
+}
+
+#filter-btn{
+    border: solid 3px black;
+    text-align: center;
+    width: 100%;
+}
+
+#filter-btn:hover {
+background-color:green;
+color: white;
+}
+
+.form-group{
+    margin: auto;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////// Graph 1 ////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+.graph1-main {
+    background-color: white;
+    color: green;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.graph1 {
+    background-color: green;
+}
+
+.graph1-text {
+    text-align: center;
+    color: black;
+}
+
+  .chart::before {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    z-index: -1;
+    display: block;
+    width: 400px;
+    height: 300px;
+    content: " ";
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    opacity: 0.3;
+  }
+  
+  .tooltip {
+    position: absolute;
+    width: 135px;
+    height: 60px;
+    padding: 2px;
+    padding-top: 8px;
+    font: 12px sans-serif;
+    color: white;
+    text-align: center;
+    background: black;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  .axis-text {
+    font-family: sans-serif;
+    font-weight: bold;
+    fill: black;
+    text-anchor: middle;
+  }
+  
+  .active {
+    font-weight: bold;
+    fill: #000;
+    fill: green;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+  }
+  
+  .inactive {
+    font-weight: lighter;
+    fill: black;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+  }
+  
+  .inactive:hover {
+    fill: green;
+    cursor: pointer;
+  }
+
+  #graph1-p {
+    color: black;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////// Graph 2 ////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+.graph2-main {
+    background-color: white;
+    color: green;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.graph2 {
+    background-color: green;
+}
+
+.graph2-text {
+    text-align: center;
+    color: black;
+}
+
+.graph2-button {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.graph2-button:hover {
+    background-color: green;
+    color: white;
+}
+
+#graph2-p {
+    color: black;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////// Graph 3 ////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+.graph3-main {
+    background-color: white;
+    color: green;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.graph3 {
+    background-color: green;
+}
+
+.graph3-text {
+    text-align: center;
+    color: black;
+}
+
+.graph3-button {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.graph3-button:hover {
+    background-color: green;
+    color: white;
+}
+
+#graph3-p {
+    color: black;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////// API ///////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+.api-main {
+    background-color: white;
+    color: green;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.api-main h2 {
+    text-align: center;
+}
+
+.api-p1 {
+    text-align: center;
+    color: black;
+}
