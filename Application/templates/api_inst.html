@@ -8,7 +8,22 @@
                 <h2 class="page-title">Api Instructions</h2>
                 <div class="api-content">
                     <p class="api-p1">
-                        Essentially use the below line (change this later)<br>
+                        Forget Spotipy! This is Spoti-Fly, baby! <br>
+                        Here's an example of how to create requests:
+                           
+                            from flask import Flask, render_template, jsonify
+                            from flask_pymongo import PyMongo
+                            # from new import somefunction
+                            import json
+                            from bson.json_util import dumps
+                            #from config import password
+
+                            app = Flask(__name__,
+                                        static_folder='static',
+                                        template_folder='templates')
+                            app.config['MONGO_URI'] = f"mongodb+srv://{username}:{password}@spotify.hw708.mongodb.net/Spotify?retryWrites=true&w=majority"
+                            mongo = PyMongo(app)
+
                         <a href="/api_data">ChangeLater/api_data</a>
                     </p>
                 </div>
