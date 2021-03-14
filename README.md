@@ -20,7 +20,7 @@ We have disabled our mongo database in order to prevent financial incursions. If
 
 If you just wish run the application with the default data. simply create a config.py file that contains the following:
 
-username = ""
+username = ""<br />
 password = ""
 
 So long as you don't click the grab data button or attempt to use the API, you will encounter no issues.
