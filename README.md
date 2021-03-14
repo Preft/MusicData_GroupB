@@ -25,9 +25,7 @@ password = ""
 
 So long as you don't click the grab data button or attempt to use the API, you will encounter no issues.
 
-### Disclaimer:
-
-### Do your own research
+### Disclaimer: Do your own research
 
 This website and associated web app is provided as is, without any representation or warranty of
 any kind, either express or implied, including without limitation any representations or
